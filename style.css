@@ -1,0 +1,438 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 21px;
+}
+
+header a:hover{
+    text-decoration: underline;
+    color: #36802d;
+}
+
+.header__logo{
+    width: 5%;
+    position: relative;
+
+}
+
+.header__logo img{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.header__left{
+    width: 23%;
+}
+
+.header__left a{
+    margin: 0 3%;
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+
+
+.header__right{
+    width: 23%;
+}
+.header__right a{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    margin: 0 3%;
+}
+
+.container h1{
+    text-align: center;
+    margin: 3%;
+    font-size: 25px;
+}
+
+.container p{
+    text-align: center;
+    font-size: 18px;
+}
+
+.container__cards{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container__card{
+    width: 29%;
+    margin: 2%;
+}
+
+.container__card img{
+    width: 100%;
+}
+
+.container__card h4{
+    margin: 3% 0;
+}
+
+.container__card h4 i{
+    float: right;
+}
+
+.container__card p{
+    font-size: 14px;
+    text-align: justify;
+}
+
+.about{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 3% 0;
+}
+
+.about__me{
+    width: 50%;
+    margin: 0 2%;
+    line-height: 25px;
+}
+
+.about__me h2{
+    margin-bottom: 3% ;
+    font-size: 25px;
+}
+
+.about__me p{
+    text-align: justify;
+}
+
+.about__stalker{
+    width: 40%;
+}
+
+.about__me p{
+    font-size: 14px;
+}
+
+.about__stalker h2{
+    text-align: center;
+}
+
+.about__stalker i{
+    padding: 15% 0;
+}
+
+.icon{
+    width: fit-content;
+    margin: 0 auto;
+}
+
+footer{
+    padding-top: 2%;
+    position: absolute;
+    margin-top: 50px;
+    width: 100%;
+}
+
+.form::before{
+        content: " ";
+        display: block;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 36px;
+        background: linear-gradient(#2B3A48 0%, transparent 0%), linear-gradient(135deg, rgb(255, 255, 255) 33.33%, transparent 33.33%) 0 0%, #f0f7da linear-gradient(45deg, #f0f7da 33.33%, #f0f7da 33.33%) 0 0%;
+        background-repeat: repeat-x;
+        background-size: 0px 100%, 9px 27px, 1px 27px;
+}
+
+.form{
+    position: relative;
+    background-color: #f0f7da;
+}
+
+.form h2,p{
+    margin-bottom: 1%;
+    padding: 0 2%;
+}
+
+.form p{
+    font-size: 16px;
+}
+
+.form input{
+    width: 96%;
+    height: 40px;
+    font-size: 16px;
+    padding: 0 1%;
+    margin: 0 2%;
+}
+
+.form textarea{
+    width: 96%;
+    height: 70px;
+    font-size: 16px;
+    padding: 0 1%;
+    margin: 0 2%;
+}
+
+.form button{
+    width: 8%;
+    height: 35px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    background-color: #234d20;
+    color: white;
+    margin: 0 2%;
+    border-radius: 30px;
+
+}
+
+.form button:hover{
+    background-color: white;
+    color: #234d20;
+    border-color: #234d20;
+    border: solid;
+    font-weight: bold;
+}
+
+.form label{
+    font-weight: bolder;
+    font-size: 14px;
+    margin: 0 2%;
+}
+
+@media (max-width: 320px) {
+    .header__left {
+      width: 40%;
+      font-size: 10px;
+    }
+
+    .header__right{
+        font-size: 10px;
+        width: 40%;
+    }
+
+    .header__logo{
+        width: 10%;
+    }
+
+    .container h1{
+        font-size: 15px;
+    }
+
+    .container p{
+        font-size: 12px;
+    }
+
+    .container__cards{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+    }
+
+    .container__card{
+        width: 100%;
+        display: flex;
+        margin: 0;
+    }
+
+    .container__card img{
+        width: 45%;
+        height: auto;
+        margin: 2%;
+    }
+
+    .container__card-info{
+        width: 48%;
+        font-size: 10px;
+    }
+
+    .container__card-info p{
+        font-size: 10px;
+    }
+
+    .about{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about__me{
+       width: 96% ; 
+       margin: 2% ; 
+       
+    }
+
+    .about__me h2{
+        font-size: 15px;
+    }
+
+    .about__me p{
+        font-size: 10px;
+        width: 100%;
+        text-align: justify;
+    }
+
+    .about__stalker{
+        width: 100%;
+        align-items: center;
+        margin: 3% 0;
+    }
+
+    .about__stalker h2{
+        font-size: 15px;
+    }
+
+    .form h2 
+    {
+        font-size: 15px;
+    }
+
+    .form p{
+        font-size: 13px;
+    }
+
+    .form button{
+        width: 25%;
+        font-size: 12px;
+    }
+
+    .form label{
+        font-size: 12px;
+    }
+  }
+
+@media (min-width: 321px) and (max-width: 480px) {
+    .header__left{
+        width: 40%;
+        font-size: 12px;
+    }
+
+    .header__right{
+        width: 40%;
+        font-size: 12px;
+    }
+
+    .header__right a{
+        margin-right: 3%;
+    }
+
+    .container h1{
+        font-size: 18px;
+    }
+
+    .container p{
+        font-size: 14px;
+    }
+
+    .container__cards{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+    }
+
+    .container__card{
+        width: 100%;
+        display: flex;
+        margin: 0;
+    }
+
+    .container__card img{
+        width: 45%;
+        height: auto;
+        margin: 2%;
+    }
+
+    .container__card-info{
+        width: 48%;
+    }
+
+    .about{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about__me{
+        width: 96%;
+    }
+
+
+
+    .about__stalker{
+        width: 100%;
+        align-items: center;
+        margin: 3% 0;
+    }
+
+    .form button{
+        width: 30%;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 640px) {
+    .header__left{
+        width: 40%;
+        font-size: 18px;
+    }
+
+    .header__right{
+        width: 40%;
+        font-size: 18px;
+    }
+
+    .header__logo{
+        width: 10%;
+    }
+
+    .about{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about__me{
+        width: 96%;
+    }
+    .about__stalker{
+        width: 100%;
+        align-items: center;
+        margin: 3% 0;
+    }
+  }
+@media (min-width: 641px) and (max-width: 768px) {
+    .header__left{
+        width: 35%;
+    }
+
+    .header__right{
+        width: 35%;
+    }
+
+    .header__logo{
+        width: 8%;
+    }
+  }
+@media (min-width: 769px) and (max-width: 960px) {
+    .header__left{
+        width: 30%;
+    }
+
+    .header__right{
+        width: 30%;
+    }
+
+    .header__logo{
+        width: 8%;
+    }
+  }
+  
